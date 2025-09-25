@@ -1,0 +1,48 @@
+#container_form {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+#login,
+#register {
+    border: 1px solid #363636;
+    background-color: #000;
+    padding: 1.5rem 2rem;
+    width: 33%;
+    margin: 2rem auto;
+}
+
+#login h2,
+#register h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.1rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: #999;
+    margin-bottom: 1.5rem;
+}
+
+#login form,
+#register form {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #363636;
+}
+
+#login p,
+#register p {
+    text-align: center;
+}
+
+#login p a,
+#register p a {
+    font-weight: bold;
+    color: #0094f6;
+}
