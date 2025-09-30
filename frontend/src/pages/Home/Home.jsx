@@ -48,7 +48,7 @@ const Home = () => {
                     <Link className="btn" to={`/photos/${photo._id}`}>ver mais</Link>
                 </div>
             ))}
-            {photos && photos.length === 0 && (
+            {photos && photos.length === 0 && user && (
                 <h2 className="no_photos">
                     Ainda não há fotos publicadas, {" "}
                     <Link to={`/users/${user._id}`}>clique aqui</Link>

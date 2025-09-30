@@ -145,7 +145,7 @@ const Profile = () => {
           <p>{user.bio}</p>
         </div>
       </div>
-      {id === userAuth._id && (
+      {userAuth && id === userAuth._id && (
         <>
           <div className="new_photo" ref={newPhotoForm}>
             <h3>Compartilhe algum momento seu:</h3>
@@ -218,7 +218,7 @@ const Profile = () => {
                 )}
               </div>
             ))}
-          {photos.length === 0 && <p> Ainda não a fotos publicadas.</p>}
+          {photos && photos.length === 0 && <p>Ainda não há fotos publicadas.</p>}
         </div>
       </div>
     </div>
